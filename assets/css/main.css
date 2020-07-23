@@ -2869,7 +2869,7 @@
 .leaders .more-btn-inst {
 	display: block;
 	min-width: 80%;
-	margin: 30px auto;
+	margin: 20px auto;
 	text-align: center;
 	transition: .4s ease;
 	transform: translateY(-10px);
@@ -2878,7 +2878,7 @@
 .leaders .more-btn-inst span {
 	font-size: large;
 	font-weight: bold;
-	color:rgb(92, 49, 0);
+	color:white;
 	padding: 10px 30px;
 	border: 1px solid rgb(255, 255, 255);
 	border-radius: 10px;
