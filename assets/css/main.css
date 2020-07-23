@@ -1926,6 +1926,11 @@
 
 	.wrapper {
 		padding: 6em 0 4em 0;
+		background: rgb(39,39,39) !important;
+		background: linear-gradient(0deg, rgba(39,39,39,1) 50%, rgba(0,0,0,1) 100%) !important;
+	}
+	.wrapper p {
+		color: #fff;
 	}
 		.wrapper h1.banner-text {
 			text-align: center;
@@ -1935,7 +1940,7 @@
 		.wrapper h1.banner-text::before {
 			content: '';
 			position: absolute;
-			background: orangered;
+			background: #272727;
 			height: 2px;
 			width: 180px;
 			margin: 40px 0 5px 10px;
@@ -1943,23 +1948,9 @@
 		}
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
-			 color: #b7ab17; 
-			/*color: #f6755e;*/
+			color: #b7ab17; 
 			font-family: 'poppins', cursive, sans-serif;
 		}
-
-		.wrapper.style1 {
-			background: #CC5226;
-			color: #fcdcd6;
-		}
-
-			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5 {
-				color: #fff;
-			}
-
-			.wrapper.style1 cite.author {
-				color: #fff;
-			}
 
 		@media screen and (max-width: 980px) {
 
@@ -2307,10 +2298,10 @@
 /* Banner */
 
 	#banner {
-		height: 95vh;
+		height: 90vh;
 		padding: 16em 0 10em 0;
-		background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../images/1.jpg);
-		clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+		background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../images/1.jpg);
+		/* clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%); */
 		background-size: cover;
 		background-position:center top;
 		background-repeat: no-repeat;
@@ -2743,14 +2734,15 @@
 		font-size: 20px;
 	} */
 	.gallery {
-		min-width:80%;
+		overflow-x: hidden !important;
+		max-width:80%;
 		margin: 0 auto;
 		padding: 10px 0;
 	}
 	.gallery h1 {
 		display: block;
 		width: 100%;
-		color: #E5432D;
+		color: #b7ab17;
 		text-align: center;
 		font-size: 40px;
 		font-family: Helvetica, sans-serif;
@@ -2763,12 +2755,17 @@
 	.gallery h1::before {
 		content: '';
 		position: absolute;
-		background: orangered;
+		background: #272727;
 		height: 2px;
 		width: 120px;
 		margin: 60px 0 5px 0;
 		padding-bottom: 3px;
 		}
+
+	.gallery .image:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+		cursor: pointer;
+	}
 
 	.gallery .more-btn-pic {
 		display: block;
@@ -2890,6 +2887,7 @@
 /* Footer */
 
 .footer {
+	background-image: url("https://wallpaperplay.com/walls/full/5/9/a/164622.jpg");
 	color: #656565;
     width: 100%;
     background: #111;
@@ -3036,10 +3034,16 @@
 }
 
 /*Developer section styling*/
+
+.bottom {
+	background: rgb(14,13,13);
+	background: linear-gradient(90deg, rgb(29, 29, 28) 20%, rgb(47, 47, 47) 85%);
+}
+
 .bottom center {
-    padding: 5px;
+	padding: 40px;
     font-size: 0.9375rem;
-    background-color: #151515;
+    background: transparent;
 }
 
 .bottom center span {
